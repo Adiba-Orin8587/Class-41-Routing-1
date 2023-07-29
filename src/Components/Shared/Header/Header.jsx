@@ -14,17 +14,17 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/" className='fs-6 fw-semibold'>Home</Nav.Link>
-                            <Nav.Link href="/about" className='fs-6 fw-semibold'>About</Nav.Link>
-                            <Nav.Link href="/users" className='fs-6 fw-semibold'>Users</Nav.Link>
+                            <Nav.Link ><Link to='/' className='fs-6 fw-semibold text-secondary text-decoration-none'>Home</Link></Nav.Link>
+                            <Nav.Link><Link to='/about' className='fs-6 fw-semibold text-secondary text-decoration-none'>About</Link></Nav.Link>
+                            <Nav.Link ><Link to='/users' className='fs-6 fw-semibold text-secondary text-decoration-none'>Users</Link></Nav.Link>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown" className='fs-6 fw-semibold'>
-                                <NavDropdown.Item href="/action/1" className='fs-6 fw-semibold'>Action</NavDropdown.Item>
-                                <NavDropdown.Item href="/action/2" className='fs-6 fw-semibold'>
+                                <NavDropdown.Item to="/action/1" className='fs-6 fw-semibold'>Action</NavDropdown.Item>
+                                <NavDropdown.Item to="/action/2" className='fs-6 fw-semibold'>
                                     Another action
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="/action/3" className='fs-6 fw-semibold'>Something</NavDropdown.Item>
+                                <NavDropdown.Item to="/action/3" className='fs-6 fw-semibold'>Something</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="/action/4" className='fs-6 fw-semibold'>
+                                <NavDropdown.Item to="/action/4" className='fs-6 fw-semibold'>
                                     Separated link
                                 </NavDropdown.Item>
                             </NavDropdown>
